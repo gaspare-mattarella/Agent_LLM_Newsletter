@@ -8,9 +8,11 @@ from crewai import Task, Agent, Crew
 from langchain_openai import ChatOpenAI
 import mailtrap as mt
 from dotenv import load_dotenv
+import os 
 
 load_dotenv("api.env")
 
+maildrop_token = os.environ.get('maildrop')
 search_tool = SerperDevTool()
 
 
@@ -76,5 +78,5 @@ mail = mt.Mail(
 )
 
 # create client and send
-client = mt.MailtrapClient(token="d0662c340108b2242fb4eed6ec09cd03")
+client = mt.MailtrapClient(token=maildrop_token)
 client.send(mail)
