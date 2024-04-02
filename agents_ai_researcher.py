@@ -2,13 +2,21 @@
 # **AGENT AI - Research Assistant on weekly LLM News And Advancements**
 """
 
-
 from crewai_tools import SerperDevTool
 from crewai import Task, Agent, Crew
 from langchain_openai import ChatOpenAI
 import mailtrap as mt
 from dotenv import load_dotenv
 import os 
+
+#####################
+
+# it is needed to load the following api of this format to run this code:
+# OPENAI_API_KEY = <YOUR OPENAI KEY>
+# SERPER_API_KEY = <YOUR SERPER KEY>
+# maildrop = <YOUR MAILDROP KEY>
+
+######################
 
 load_dotenv("api.env")
 
