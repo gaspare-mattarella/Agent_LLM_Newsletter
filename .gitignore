@@ -1,6 +1,6 @@
 .env
 agents_ai.code-workspace
 .DS_Store
-/__pycache__
+__pycache__
 .venv
-.vscode/
+.vscode
