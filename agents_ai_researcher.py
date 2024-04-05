@@ -23,7 +23,7 @@ from crewai_tools import ScrapeWebsiteTool
 
 ######################
 
-load_dotenv("api.env")
+load_dotenv()
 
 human_tool = load_tools(['human'])
 
